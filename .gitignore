@@ -1,0 +1,39 @@
+# Окружения и зависимости
+.venv/
+venv/
+env/
+.uv/
+
+# Кэш Python и сборка
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Линтеры и тайпчекеры
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Отчёты и логи тестов
+allure-results/
+allure-report/
+logs/
+*.log
+
+# Секреты и локальные конфиги (никогда не пушить!)
+.env
+.env.*
+!.env.example
+
+# IDE и ОС
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
