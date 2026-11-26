@@ -10,5 +10,6 @@ dependencies = [
 [tool.pytest.ini_options]
 addopts = "-v -s"
 markers = [
-    "api: API Test"
+    "api: API Test",
+    "AUTH: Authorization Test"
 ]
