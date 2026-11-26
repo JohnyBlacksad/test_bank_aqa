@@ -1,0 +1,10 @@
+from main.api.models.base_model import BaseModel
+
+class User(BaseModel):
+    usernmae: str
+    role: str
+
+class LoginUserResponse(BaseModel):
+    token: str
+    user: User
+
