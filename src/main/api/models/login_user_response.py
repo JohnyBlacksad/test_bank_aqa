@@ -1,7 +1,7 @@
 from main.api.models.base_model import BaseModel
 
 class User(BaseModel):
-    usernmae: str
+    username: str
     role: str
 
 class LoginUserResponse(BaseModel):

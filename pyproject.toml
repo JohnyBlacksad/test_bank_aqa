@@ -11,8 +11,9 @@ dependencies = [
 
 [tool.pytest.ini_options]
 addopts = "-v -s"
+pythonpath=['.', 'src']
+importmode = "importlib"
 markers = [
     "api: API Test",
     "AUTH: Authorization Test"
 ]
-pythonpath=['.']

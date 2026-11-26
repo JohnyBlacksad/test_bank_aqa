@@ -12,8 +12,8 @@ from main.api.specs.response_specs import ResponseSpecs
 class TestCreateUser:
     def test_create_user(self):
         create_user_request = CreateUserRequest(
-            username="Max2205",
-            password='password',
+            username="Max22055",
+            password='Pas!sw0rd',
             role='ROLE_USER'
         )
         
