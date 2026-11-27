@@ -289,6 +289,15 @@ wheels = [
 ]
 
 [[package]]
+name = "rstr"
+version = "4.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/cd/74/e078f68fae148cdee0b71648ca19b28f306f683214997284c0d2b5fde1cb/rstr-4.0.0.tar.gz", hash = "sha256:1a1e7f304b0291edbc12955a9cb4093bfe1c7c1d48e0797e752bb3bf2a24574a", size = 14576, upload-time = "2026-11-19T23:26:56.133Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b1/8b/86a00b3172958bbe667158d4417d0c12d51cb7aff9b1c2eb955edd136154/rstr-4.0.0-py3-none-any.whl", hash = "sha256:a000b4de844b2341bac4be2bcad120768988702aac46f3a232e8885184aa9198", size = 9804, upload-time = "2026-11-19T23:26:54.836Z" },
+]
+
+[[package]]
 name = "test-bank-aqa"
 version = "0.1.0"
 source = { virtual = "." }
@@ -297,6 +306,7 @@ dependencies = [
     { name = "pydantic" },
     { name = "pydantic-settings" },
     { name = "pytest" },
+    { name = "rstr" },
 ]
 
 [package.metadata]
@@ -305,6 +315,7 @@ requires-dist = [
     { name = "pydantic", specifier = ">=2.14.4" },
     { name = "pydantic-settings", specifier = ">=2.16.3" },
     { name = "pytest", specifier = ">=9.2.0" },
+    { name = "rstr", specifier = ">=4.0.0" },
 ]
 
 [[package]]
