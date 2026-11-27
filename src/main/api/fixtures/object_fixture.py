@@ -1,7 +1,7 @@
 import logging
-from typing import Any
-
 import pytest
+
+from typing import Any
 
 from main.api.classes.api_manager import ApiManager
 from main.api.models.create_user_response import CreateUserResponse

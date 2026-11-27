@@ -1,4 +1,4 @@
-from http import Response
+from httpx import Response
 from typing import Optional, Protocol
 
 from main.api.models.base_model import BaseModel

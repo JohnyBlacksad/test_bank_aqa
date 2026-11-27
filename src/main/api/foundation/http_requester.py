@@ -1,7 +1,7 @@
 
 
 
-from typing import Any, Callable
+from typing import Callable
 
 from main.api.foundation.endpoint import Endpoint
 

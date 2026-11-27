@@ -1,12 +1,7 @@
 import pytest
 
-from main.api.models.login_user_request import LoginUserRequest
 from main.api.models.create_user_request import CreateUserRequest
-from main.api.models.create_user_response import CreateUserResponse
-from main.api.models.login_user_response import LoginUserResponse
-from main.api.requests.create_user_requester import CreateUserRequester
-from main.api.specs.request_specs import RequestSpecs
-from main.api.specs.response_specs import ResponseSpecs
+
 
 @pytest.mark.api
 class TestCreateUser:
@@ -37,11 +32,7 @@ class TestCreateUser:
                 ("Maxx5", "PAS!SWORD")
             ]
                              )
-    def test_create_invalid_user(self, username, password):
+    def test_create_invalid_user(self, username, password, api_manager):
         
         create_user_request = CreateUserRequest(username=username, password=password, role='ROLE_USER')
-        
-        response = CreateUserRequester(
-            request_spec=RequestSpecs.auth_headers(username='admin', password='123456'),
-            response_spec=ResponseSpecs.request_bad()
-        ).post(create_user_request)
+        api_manager.admin_steps.create_invalid_user(create_user_request)
